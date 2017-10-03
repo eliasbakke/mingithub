@@ -1,5 +1,5 @@
 body {
-	background: url(landskap.jpg) no-repeat center center fixed;
+	background: url(bilder/landskap.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -16,7 +16,7 @@ h1 {
 }
 
 #strek {
-	padding-bottom: 22%;
+	padding-bottom: 10%;
 }
 
 
@@ -101,11 +101,11 @@ p {
 	color: #ff0000;
 }
 
-#link1, #link2, #link3 {
+#link1, #link2, #link3, #link4 {
 	font-size: 20px;
 }
 
-#link1:hover, #link2:hover, #link3:hover {
+#link1:hover, #link2:hover, #link3:hover, #link4:hover {
 	opacity: 0.5;
 	color: #ff0000;
 }
@@ -120,6 +120,11 @@ p {
 
 #link3 {
 	margin-right: 35px;
+}
+
+#link4 {
+	margin-right: 15px;
+	margin-top: 8%;
 }
 
 article {
