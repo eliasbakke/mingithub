@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nn">
+<head>
+	<title>Forside</title>
+	<link rel="stylesheet" type="text/css" href="oblig2.css">
+	<script src="https://use.fontawesome.com/af4e45f5ea.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<div id="navbar">
+
+			<h1>Elias Bakke</h1>
+			<p>________________</p>
+
+			<i id="book" class="fa fa-address-book-o fa-5x" aria-hidden="true"></i>
+			<p id="strek">________________</p>
+			<a href="frontpage.html" id="navButtons">Hjem</a>
+			<a href="about.html" id="link1">• Om</a>
+			<a href="mathml.html" id="link2">• MathML</a>
+			<a href="svg.html" id="link3">• SVG</a>
+
+		<div id="ikoner">
+			<a href="https://www.facebook.com/elias.bakke.5" target="blank"><i class="fa fa-facebook-square fa-lg" id="facebook" aria-hidden="true"></i></a>	
+			<a href="https://www.instagram.com/eliasbakke96/" target="blank"><i class="fa fa-instagram fa-lg" id="instagram" aria-hidden="true"></i></a>
+			<a href="http://ask.hiof.no/~eliasba/" target="blank"><i class="fa fa-chrome fa-lg" id="ask" aria-hidden="true"></i></a>
+		</div>
+	</div>
+
+	<div id="forsidebakgrunn">
+
+		<div class="slideshow">
+			<article id="schedule">Hold over timeplanen for å forstørre</article>
+			<img class="mySlides" src="timeplan1.jpg" alt="Timeplan1" style="width:50%">
+			<img class="mySlides" src="timeplan2.jpg" alt="Timeplan2" style="width:50%">
+			<img class="mySlides" src="timeplan3.jpg" alt="Timeplan3" style="width:50%">
+			<img class="mySlides" src="timeplan4.jpg" alt="Timeplan4" style="width:50%">
+
+			<button class="slideRightbtn" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="slideLeftbtn" onclick="plusDivs(1)">&#10095;</button>
+		</div>
+
+		<!--Prøvde å få javascript utenfor body, men fikk det ikke til å funke-->
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+					if (n > x.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = x.length}
+						for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";
+						}
+					x[slideIndex-1].style.display = "block";	
+			}
+		</script>
+
+		
+			<div id="avsnitt1">
+			<h2>Om</h2>
+			Klikk på "Om" i menyen til venstre eller på footeren nederst for å finne ut mer om hvordan jeg har tenkt når jeg planlagt innhold, plassering av elementer og skisser.
+			</div>
+			<div id="avsnitt2">
+			<h2>MathML</h2>
+			Klikk på "MathML" i menyen til venstre for å finne ut mer om hva MathML er, hvorfor det er nyttig i kombinasjon med HTML, noen eksempler og forklaringer på hvorfor det er positivt å bruke.
+			</div>
+			<div id="avsnitt3">
+			<h2>SVG</h2>
+			Klikk på "SVG" i menyen til venstre for å finne ut hva SVG er, hva det kan brukes til og noen eksempler på bruk av SVG i html.
+			</div>
+			<div id="avsnitt4">
+			<h3>Viktig informasjon!</h3>
+			_______________________ 04/10: Oblig2 Web</br>04/10: Oblig2 Inf.prog</br>04/10: Egenvurdering uke 4</br>18/10: Oblig3 Web</br>18/10: Oblig3 Inf.prog
+			</div>
+
+
+
+		<footer id="frontfooter">
+	 <a href="about.html" id="footer">Info om denne siden..</a>
+	</footer>
+	</div>
+
+</body>
+</html>
